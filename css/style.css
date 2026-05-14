@@ -295,7 +295,11 @@ p {
 .hero-builds-dps-portal,
 .hero-builds-skill-portal,
 .hero-builds-pvp-portal,
-.hero-builds-hibridas-portal {
+.hero-builds-hibridas-portal,
+.hero-sobre-portal,
+.hero-contato-portal,
+.hero-privacidade-portal,
+.hero-termos-portal {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -310,7 +314,11 @@ p {
 .hero-builds-dps-portal::before,
 .hero-builds-skill-portal::before,
 .hero-builds-pvp-portal::before,
-.hero-builds-hibridas-portal::before {
+.hero-builds-hibridas-portal::before,
+.hero-sobre-portal::before,
+.hero-contato-portal::before,
+.hero-privacidade-portal::before,
+.hero-termos-portal::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -330,7 +338,11 @@ p {
 .hero-builds-dps-portal::after,
 .hero-builds-skill-portal::after,
 .hero-builds-pvp-portal::after,
-.hero-builds-hibridas-portal::after {
+.hero-builds-hibridas-portal::after,
+.hero-sobre-portal::after,
+.hero-contato-portal::after,
+.hero-privacidade-portal::after,
+.hero-termos-portal::after {
   content: "";
   position: absolute;
   inset: 0;
