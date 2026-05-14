@@ -291,7 +291,11 @@ p {
 .hero-exoticas-portal,
 .hero-raides-portal,
 .hero-intensificacao-portal,
-.hero-lendarias-portal {
+.hero-lendarias-portal,
+.hero-builds-dps-portal,
+.hero-builds-skill-portal,
+.hero-builds-pvp-portal,
+.hero-builds-hibridas-portal {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -302,7 +306,11 @@ p {
 .hero-exoticas-portal::before,
 .hero-raides-portal::before,
 .hero-intensificacao-portal::before,
-.hero-lendarias-portal::before {
+.hero-lendarias-portal::before,
+.hero-builds-dps-portal::before,
+.hero-builds-skill-portal::before,
+.hero-builds-pvp-portal::before,
+.hero-builds-hibridas-portal::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -318,7 +326,11 @@ p {
 .hero-exoticas-portal::after,
 .hero-raides-portal::after,
 .hero-intensificacao-portal::after,
-.hero-lendarias-portal::after {
+.hero-lendarias-portal::after,
+.hero-builds-dps-portal::after,
+.hero-builds-skill-portal::after,
+.hero-builds-pvp-portal::after,
+.hero-builds-hibridas-portal::after {
   content: "";
   position: absolute;
   inset: 0;
