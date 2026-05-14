@@ -78,64 +78,83 @@ p {
   left: 0;
   width: 100%;
   z-index: 100;
-  background: rgba(10, 12, 18, 0.68);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(3, 5, 8, .96);
+  border-bottom: 1px solid rgba(255, 255, 255, .06);
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
 }
 
 .navbar {
-  min-height: 78px;
+  min-height: 84px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18px;
-  padding: 12px 0;
+  gap: 22px;
+  padding: 8px 0;
   position: relative;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
-}
-
-.brand-mark {
-  width: 48px;
-  height: 48px;
-  border-radius: 16px;
-  display: grid;
-  place-items: center;
+  gap: 14px;
+  text-decoration: none;
   flex-shrink: 0;
-  color: #fff;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 800;
-  font-size: 0.95rem;
-  letter-spacing: 1.4px;
-  background: linear-gradient(135deg, var(--orange), var(--orange-2));
-  box-shadow: 0 14px 30px rgba(255, 106, 19, 0.28);
 }
 
 .brand-copy {
   display: flex;
   flex-direction: column;
-  line-height: 1.1;
+  justify-content: center;
+  gap: 2px;
+  line-height: 1;
 }
 
 .brand-copy strong {
-  color: var(--orange);
+  color: #ff944d;
   font-family: 'Orbitron', sans-serif;
+  font-size: .92rem;
   font-weight: 800;
-  font-size: .95rem;
-  letter-spacing: .04em;
+  letter-spacing: .08em;
   text-transform: uppercase;
+  text-shadow:
+    0 0 10px rgba(255,106,19,.28);
+}
+
+/* SUBTITULO */
+.brand-copy small {
+  color: rgba(255,255,255,.58);
+  font-size: .24rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.navbar-logo {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  object-fit: contain;
+  display: block;
+  border-radius: 50%;
+  filter:
+    drop-shadow(0 0 8px rgba(255,106,19,.32))
+    drop-shadow(0 0 18px rgba(255,106,19,.18));
+}
+
+.brand:hover .navbar-logo {
+  transform: scale(1.10);
+  filter:
+    saturate(1.12)
+    contrast(1.08)
+    drop-shadow(0 0 8px rgba(255, 106, 19, .35));
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 30px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -143,10 +162,12 @@ p {
 
 .nav-menu a {
   color: #cfd6df;
-  font-weight: 700;
-  font-size: 0.95rem;
+  font-weight: 800;
+  font-size: .76rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
   position: relative;
-  transition: color 0.22s ease;
+  transition: color .22s ease;
 }
 
 .nav-menu a:hover,
@@ -158,11 +179,12 @@ p {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -8px;
+  bottom: -10px;
   width: 0;
   height: 2px;
   background: var(--orange);
-  transition: width 0.22s ease;
+  box-shadow: 0 0 10px rgba(255, 106, 19, .45);
+  transition: width .22s ease;
 }
 
 .nav-menu a:hover::after,
@@ -1219,7 +1241,7 @@ p {
 
 @media (max-width: 860px) {
   .navbar {
-    min-height: 72px;
+    min-height: 92px;
   }
 
   .nav-toggle {
@@ -1365,22 +1387,55 @@ p {
     height: 190px;
   }
 
+  /* NAVBAR */
+  .navbar {
+    min-height: 72px;
+    padding: 8px 0;
+  }
+
+  /* BRAND */
+  .brand {
+    gap: 10px;
+    max-width: calc(100% - 70px);
+  }
+
+  /* LOGO */
+  .navbar-logo {
+    width: 46px;
+    height: 46px;
+
+    transform: scale(1.02);
+  }
+
+  /* BLOCO TEXTO */
+  .brand-copy {
+    gap: 1px;
+  }
+
+  /* TITULO */
+  .brand-copy strong {
+    font-size: .72rem;
+    letter-spacing: .06em;
+  }
+
+  /* SUBTITULO */
+  .brand-copy small {
+    font-size: .48rem;
+    letter-spacing: .05em;
+  }
+
+  /* MENU */
+  .nav-toggle {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+  }
+
 }
 
 @media (max-width: 620px) {
   .container {
     width: min(var(--max), calc(100% - 20px));
-  }
-
-  .brand-mark {
-    width: 42px;
-    height: 42px;
-    font-size: 0.85rem;
-    border-radius: 14px;
-  }
-
-  .brand-copy strong {
-    font-size: .78rem;
   }
 
   .section,
@@ -1442,5 +1497,18 @@ p {
 
   .card-media {
     height: 190px;
+  }
+
+  .brand-copy small {
+    display: none;
+  }
+
+  .brand-copy strong {
+    font-size: .68rem;
+  }
+
+  .navbar-logo {
+    width: 42px;
+    height: 42px;
   }
 }
