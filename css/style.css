@@ -124,7 +124,7 @@ p {
 /* SUBTITULO */
 .brand-copy small {
   color: rgba(255,255,255,.58);
-  font-size: .24rem;
+  font-size: .60rem;
   font-weight: 600;
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -231,10 +231,46 @@ p {
    3. HERO CINEMATOGRÁFICO
 ========================================================= */
 
-.hero {
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
+.hero-content,
+.hero-panel {
+  padding-top: 10px;
+}
+
+/* Heroes internas */
+.hero[class*="-portal"],
+.hero-home {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  padding: 170px 0 72px;
+}
+
+.hero[class*="-portal"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+
+  background-image: url("../img/home/division-home.webp");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  transform: scale(1.03);
+  filter: saturate(1.08) contrast(1.08) brightness(0.9);
+}
+
+.hero[class*="-portal"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  background:
+    radial-gradient(circle at 18% 48%, rgba(255, 106, 19, 0.32), transparent 28%),
+    radial-gradient(circle at 82% 22%, rgba(103, 212, 255, 0.16), transparent 24%),
+    linear-gradient(90deg, rgba(7, 9, 13, 0.95) 0%, rgba(7, 9, 13, 0.58) 48%, rgba(7, 9, 13, 0.88) 100%),
+    linear-gradient(180deg, rgba(7, 9, 13, 0.35) 0%, rgba(7, 9, 13, 0.93) 100%);
 }
 
 .hero-grid {
@@ -247,15 +283,16 @@ p {
 }
 
 .hero-content {
-  max-width: 850px;
+  max-width: 760px;
 }
 
 .hero h1 {
   margin-bottom: 18px;
-  max-width: 850px;
+  max-width: 680px;
   font-family: 'Orbitron', sans-serif;
-  font-size: clamp(2.7rem, 5.4vw, 5.7rem);
-  line-height: 1.02;
+  font-size: clamp(2.4rem, 4.6vw, 4.8rem);
+  line-height: .98;
+  letter-spacing: -.02em;
   text-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
@@ -282,8 +319,8 @@ p {
 .hero-home {
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  padding: 132px 0 72px;
+  align-items: flex-start;
+  padding: 170px 0 72px;
 }
 
 .hero-home .hero-bg {
@@ -306,104 +343,6 @@ p {
     radial-gradient(circle at 82% 22%, rgba(103, 212, 255, 0.16), transparent 24%),
     linear-gradient(90deg, rgba(7, 9, 13, 0.95) 0%, rgba(7, 9, 13, 0.58) 48%, rgba(7, 9, 13, 0.86) 100%),
     linear-gradient(180deg, rgba(7, 9, 13, 0.35) 0%, rgba(7, 9, 13, 0.92) 100%);
-}
-
-/* Heroes internos usam pseudo-elementos */
-.hero-builds-portal,
-.hero-exoticas-portal,
-.hero-raides-portal,
-.hero-intensificacao-portal,
-.hero-lendarias-portal,
-.hero-builds-dps-portal,
-.hero-builds-skill-portal,
-.hero-builds-pvp-portal,
-.hero-builds-hibridas-portal,
-.hero-sobre-portal,
-.hero-contato-portal,
-.hero-privacidade-portal,
-.hero-termos-portal,
-.hero-build-striker-dps-portal,
-.hero-build-skill-countdown-portal,
-.hero-build-suporte-paradise-portal,
-.hero-ouroboros-portal,
-.hero-eagle-bearer-portal,
-.hero-regulus-portal,
-.hero-ravenous-portal,
-.hero-paradise-lost-portal,
-.hero-dark-hours-portal,
-.hero-iron-horse-portal {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 132px 0 72px;
-}
-
-.hero-builds-portal::before,
-.hero-exoticas-portal::before,
-.hero-raides-portal::before,
-.hero-intensificacao-portal::before,
-.hero-lendarias-portal::before,
-.hero-builds-dps-portal::before,
-.hero-builds-skill-portal::before,
-.hero-builds-pvp-portal::before,
-.hero-builds-hibridas-portal::before,
-.hero-sobre-portal::before,
-.hero-contato-portal::before,
-.hero-privacidade-portal::before,
-.hero-termos-portal::before,
-.hero-build-striker-dps-portal::before,
-.hero-build-skill-countdown-portal::before,
-.hero-build-suporte-paradise-portal::before,
-.hero-ouroboros-portal::before,
-.hero-eagle-bearer-portal::before,
-.hero-regulus-portal::before,
-.hero-ravenous-portal::before,
-.hero-paradise-lost-portal::before,
-.hero-dark-hours-portal::before,
-.hero-iron-horse-portal::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  background-image: url('../img/home/division-home.webp');
-  background-size: cover;
-  background-position: center;
-  transform: scale(1.03);
-  filter: saturate(1.08) contrast(1.08) brightness(0.9);
-}
-
-.hero-builds-portal::after,
-.hero-exoticas-portal::after,
-.hero-raides-portal::after,
-.hero-intensificacao-portal::after,
-.hero-lendarias-portal::after,
-.hero-builds-dps-portal::after,
-.hero-builds-skill-portal::after,
-.hero-builds-pvp-portal::after,
-.hero-builds-hibridas-portal::after,
-.hero-sobre-portal::after,
-.hero-contato-portal::after,
-.hero-privacidade-portal::after,
-.hero-termos-portal::after,
-.hero-build-striker-dps-portal::after,
-.hero-build-skill-countdown-portal::after,
-.hero-build-suporte-paradise-portal::after,
-.hero-ouroboros-portal::after,
-.hero-eagle-bearer-portal::after,
-.hero-regulus-portal::after,
-.hero-ravenous-portal::after,
-.hero-paradise-lost-portal::after,
-.hero-dark-hours-portal::after,
-.hero-iron-horse-portal::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background:
-    radial-gradient(circle at 18% 48%, rgba(255, 106, 19, 0.32), transparent 28%),
-    radial-gradient(circle at 82% 22%, rgba(103, 212, 255, 0.16), transparent 24%),
-    linear-gradient(90deg, rgba(7, 9, 13, 0.95) 0%, rgba(7, 9, 13, 0.58) 48%, rgba(7, 9, 13, 0.88) 100%),
-    linear-gradient(180deg, rgba(7, 9, 13, 0.35) 0%, rgba(7, 9, 13, 0.93) 100%);
 }
 
 .hero-exoticas-portal::before {
@@ -1288,12 +1227,20 @@ p {
     color: #fff;
   }
 
-  .hero-home,
-  .hero-builds-portal,
-  .hero-exoticas-portal {
-    min-height: auto;
+  .hero[class*="-portal"],
+  .hero-home {
+    /*min-height: auto;*/
     padding: 118px 0 56px;
-    display: block;
+    /*display: block;*/
+  }
+
+  .hero[class*="-portal"]::before {
+    background-position: center top;
+  }
+
+  .hero-content,
+  .hero-panel {
+    padding-top: 0;
   }
 
   .hero-grid {
