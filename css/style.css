@@ -1260,6 +1260,13 @@ p {
    9. RESPONSIVO
 ========================================================= */
 
+@media (max-width: 1100px) {
+  .exoticas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
 @media (max-width: 1040px) {
   .hero-grid,
   .featured-layout {
@@ -1291,6 +1298,12 @@ p {
   .nav-toggle {
     display: flex;
   }
+
+  @media (max-width: 680px) {
+  .exoticas-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
   .nav-menu {
     display: none;
