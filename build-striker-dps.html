@@ -74,13 +74,13 @@
           </p>
 
           <div class="hero-actions">
-            <a href="#montagem" class="btn btn-primary">
+            <a href="#variantes" class="btn btn-primary">
               <i class="fa-solid fa-layer-group"></i>
-              Ver Montagem
+              Ver Variantes
             </a>
-            <a href="#gameplay" class="btn btn-secondary">
+            <a href="#striker-meta" class="btn btn-secondary">
               <i class="fa-solid fa-crosshairs"></i>
-              Como Jogar
+              Build Meta
             </a>
           </div>
 
@@ -141,9 +141,14 @@
 
         <div class="featured-layout">
           <article class="card card-featured build-main-card">
-            <div class="card-media">
-              <img src="img/builds/striker-dps.webp" alt="Build Striker DPS em The Division 2" loading="lazy" />
-              <span class="chip chip-meta">META PvE</span>
+            <div class="card-media build-loadout-media">
+              <a href="img/builds/the-division2-build-strker-fenris-ceska1.png" 
+                class="lightbox-trigger">
+                <img src="img/builds/the-division2-build-strker-fenris-ceska1.png" 
+                  alt="Build Striker DPS em The Division 2" 
+                  loading="lazy">
+                <span class="chip chip-meta">META PvE</span>
+              </a>
             </div>
             <div class="card-body">
               <span class="card-kicker">Agressor / Dano Sustentado</span>
@@ -157,7 +162,7 @@
                 <span>Raid</span>
                 <span>Farm</span>
               </div>
-              <a href="#montagem" class="card-link">Ver composição <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#variantes" class="card-link">Ver variantes <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </article>
 
@@ -166,21 +171,21 @@
               <span class="chip">Pontos Fortes</span>
               <h3>Dano constante</h3>
               <p>Excelente para manter pressão em inimigos e bosses quando você consegue acertar continuamente.</p>
-              <a href="#gameplay">Como jogar</a>
+              <a href="#striker-meta">Ver Meta</a>
             </article>
 
             <article class="card compact-card">
               <span class="chip">Atenção</span>
               <h3>Exige acertos</h3>
               <p>Se você erra muitos tiros ou fica muito tempo sem atirar, a build perde parte da eficiência.</p>
-              <a href="#dicas">Ver dicas</a>
+              <a href="#striker-solo">Ver Solo</a>
             </article>
 
             <article class="card compact-card">
               <span class="chip">Armas</span>
               <h3>Alta cadência</h3>
               <p>St. Elmo, Ouroboros, FAMAS, Police M4 e outras armas rápidas combinam bem.</p>
-              <a href="#armas">Ver armas</a>
+              <a href="#striker-farm">Ver Farm</a>
             </article>
 
             <article class="card compact-card">
@@ -194,226 +199,409 @@
       </div>
     </section>
 
-    <!-- MONTAGEM -->
-    <section class="section section-dark" id="montagem">
+    
+    <!-- NAVEGAÇÃO DAS VARIANTES -->
+    <section class="section section-guides" id="variantes">
       <div class="container">
         <div class="section-header center-header">
-          <span class="eyebrow">Montagem</span>
-          <h2>Peças recomendadas</h2>
+          <span class="eyebrow">Variantes</span>
+          <h2>Escolha sua versão da Striker</h2>
           <p>
-            Esta é uma base segura para começar. Você pode ajustar colete, mochila e armas conforme raid, farm solo ou disponibilidade de exóticas.
+            O set Agressor pode ser adaptado para diferentes atividades. Use os atalhos abaixo para ir direto à versão ideal para seu objetivo.
           </p>
         </div>
 
-        <div class="grid grid-4 hub-grid">
-          <article class="hub-card">
-            <i class="fa-solid fa-helmet-safety"></i>
-            <h3>4x Agressor</h3>
-            <p>Use quatro peças do set para ativar o coração da build: stacks e dano sustentado.</p>
-          </article>
+        <div class="variant-nav-grid">
+          <a href="#striker-meta" class="card variant-nav-card">
+            <div>
+              <i class="fa-solid fa-fire"></i>
+              <span class="chip">META PvE</span>
+              <h3>Striker Meta</h3>
+              <p>Maior dano sustentado para PvE e endgame geral.</p>
+            </div>
+          </a>
 
-          <article class="hub-card">
-            <i class="fa-solid fa-vest"></i>
-            <h3>Colete DPS</h3>
-            <p>Opções com Obliterar ou variações ofensivas funcionam muito bem para dano crítico.</p>
-          </article>
+          <a href="#striker-raid" class="card variant-nav-card">
+            <div>
+              <i class="fa-solid fa-users"></i>
+              <span class="chip">RAID</span>
+              <h3>Striker Raid</h3>
+              <p>Dano consistente para bosses e fases críticas.</p>
+            </div>
+          </a>
 
-          <article class="hub-card">
-            <i class="fa-solid fa-briefcase"></i>
-            <h3>Mochila</h3>
-            <p>Use mochila que fortaleça dano, stacks ou sustentação da build conforme sua composição.</p>
-          </article>
+          <a href="#striker-lendaria" class="card variant-nav-card">
+            <div>
+              <i class="fa-solid fa-skull-crossbones"></i>
+              <span class="chip">LENDÁRIA</span>
+              <h3>Striker Lendária</h3>
+              <p>Mais controle de exposição para missões lendárias.</p>
+            </div>
+          </a>
 
-          <article class="hub-card">
-            <i class="fa-solid fa-gem"></i>
-            <h3>Atributos</h3>
-            <p>Priorize chance crítica, dano crítico e dano de arma. Ajuste chance crítica perto do limite ideal.</p>
-          </article>
+          <a href="#striker-solo" class="card variant-nav-card">
+            <div>
+              <i class="fa-solid fa-user-shield"></i>
+              <span class="chip">SOLO</span>
+              <h3>Striker Solo</h3>
+              <p>Mais segurança para jogar sem depender de grupo.</p>
+            </div>
+          </a>
+
+          <a href="#striker-farm" class="card variant-nav-card">
+            <div>
+              <i class="fa-solid fa-arrow-trend-up"></i>
+              <span class="chip">FARM</span>
+              <h3>Striker Farm</h3>
+              <p>Versão simples para SHD, materiais e proficiência.</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ATRIBUTOS / TALENTOS -->
-    <section class="section section-build-goals" id="atributos">
+    <!-- STRIKER META -->
+    <section class="section section-dark" id="striker-meta">
       <div class="container">
         <div class="section-header split-header">
           <div>
-            <span class="eyebrow">Atributos e Talentos</span>
-            <h2>O que priorizar</h2>
+            <span class="eyebrow">META PvE</span>
+            <h2>Striker Meta</h2>
             <p>
-              A build funciona melhor quando os atributos e talentos reforçam o mesmo objetivo: dano constante com alto crítico.
+              Versão focada em dano sustentado, alta cadência e crítico. É a base mais forte para PvE geral, Countdown, incursões e atividades endgame.
             </p>
           </div>
+          <a href="#variantes" class="btn btn-outline">Voltar às variantes</a>
         </div>
 
-        <div class="grid grid-3 endgame-grid">
-          <article class="card endgame-card">
-            <div class="icon-badge"><i class="fa-solid fa-crosshairs"></i></div>
-            <h3>Chance Crítica</h3>
-            <p>
-              Busque uma chance crítica consistente sem desperdiçar atributos acima do limite. Depois disso, foque em dano crítico.
-            </p>
-            <a href="builds-dps.html">Ver Hub DPS</a>
+        <div class="build-variant-layout">
+          <article class="card card-featured build-main-card">
+            <div class="card-media build-loadout-media">
+              <a href="img/builds/the-division2-build-striker-ceska.png" 
+                class="lightbox-trigger">
+                <img src="img/builds/the-division2-build-striker-ceska.png" 
+                  alt="Build Striker Meta The Division 2" 
+                  loading="lazy">
+                <span class="chip chip-meta">META</span>
+              </a>
+            </div>
+
+            <div class="card-body">
+              <span class="card-kicker">Agressor / DPS Sustentado</span>
+              <h3>Base da variante</h3>
+              <p>
+                Combina 4 peças do Agressor com Coyote e colete ofensivo para maximizar dano crítico, manter stacks e derreter elites e bosses.
+              </p>
+
+              <div class="tag-row">
+                <span>Ouroboros</span>
+                <span>St. Elmo</span>
+                <span>60% CHC</span>
+                <span>160%+ CHD</span>
+              </div>
+
+              <div class="variant-weapons">
+                <span><strong>Primária:</strong> St. Elmo ou Famas 2000 (Talento: Comedido)</span>
+                <span><strong>Secundária:</strong> Shotgum Rock and Roll</span>
+              </div>
+            </div>
           </article>
 
-          <article class="card endgame-card">
-            <div class="icon-badge"><i class="fa-solid fa-burst"></i></div>
-            <h3>Dano Crítico</h3>
-            <p>
-              Depois de ajustar chance crítica, dano crítico é um dos atributos mais importantes para escalar o desempenho.
-            </p>
-            <a href="#montagem">Ver montagem</a>
-          </article>
+          <div class="gear-mini-grid">
+            <article class="card gear-mini-card">
+              <img src="img/equipamentos/striker/the-division2-mascara-coyote.webp" alt="Máscara Coyote Striker Meta" loading="lazy">
+              <h3>Máscara Coyote</h3>
+            </article>
 
-          <article class="card endgame-card">
-            <div class="icon-badge"><i class="fa-solid fa-bolt"></i></div>
-            <h3>Talento Ofensivo</h3>
-            <p>
-              Talentos como Obliterar são boas opções para aumentar dano enquanto você mantém acertos constantes.
-            </p>
-            <a href="#gameplay">Ver gameplay</a>
-          </article>
+            <article class="card gear-mini-card">
+              <img src="img/equipamentos/striker/the-division2-mochila.webp" alt="Mochila Agressor Striker" loading="lazy">
+              <h3>Mochila Agressor</h3>
+            </article>
+
+            <article class="card gear-mini-card">
+              <img src="img/equipamentos/striker/the-division2-colete-ceska.webp" alt="Colete Ceska com Obliterar" loading="lazy">
+                <h3>Colete Ceska Vyroba</h3>
+            </article>
+
+            <article class="card gear-mini-card">
+              <img src="img/equipamentos/striker/the-division2-luva.webp" alt="Luvas Agressor Striker" loading="lazy">
+              <h3>Luvas Agressor</h3>
+            </article>
+
+            <article class="card gear-mini-card">
+              <img src="img/equipamentos/striker/the-division2-coldre.webp" alt="Coldre Agressor Striker" loading="lazy">
+              <h3>Coldre Agressor</h3>
+            </article>
+
+            <article class="card gear-mini-card">
+              <img src="img/equipamentos/striker/the-division2-joelheira.webp" alt="Joelheiras Agressor Striker" loading="lazy">
+              <h3>Joelheiras Agressor</h3>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ARMAS -->
-    <section class="section section-guides" id="armas">
+    <!-- STRIKER RAID -->
+    <section class="section section-featured" id="striker-raid">
       <div class="container">
         <div class="section-header split-header">
           <div>
-            <span class="eyebrow">Armas</span>
-            <h2>Melhores armas para Striker DPS</h2>
+            <span class="eyebrow">RAID</span>
+            <h2>Striker Raid</h2>
             <p>
-              Armas de alta cadência e boa estabilidade ajudam a manter stacks e aproveitar melhor o bônus do set.
+              Variante voltada para dano consistente contra bosses e fases críticas de Dark Hours, Iron Horse e Paradise Lost.
             </p>
           </div>
+          <a href="#variantes" class="btn btn-outline">Voltar às variantes</a>
         </div>
 
-        <div class="guide-list">
-          <article class="guide-row card">
-            <div>
-              <span class="chip">AR</span>
-              <h3>St. Elmo</h3>
-              <p>Uma das melhores opções para Striker DPS pela versatilidade, estabilidade e excelente desempenho em PvE.</p>
+        <div class="build-variant-layout">
+          <article class="card card-featured build-main-card">
+            <div class="card-media build-loadout-media">
+              <a href="img/builds/the-division2-striker-oracao-ateu1.png" 
+                class="lightbox-trigger">
+                <img src="img/builds/the-division2-striker-oracao-ateu1.png" 
+                  alt="Build Striker Raid The Division 2" 
+                  loading="lazy">
+                <span class="chip chip-meta">RAID</span>
+              </a>
             </div>
-            <a href="st-elmo.html">Ver St. Elmo <i class="fa-solid fa-arrow-right"></i></a>
+
+            <div class="card-body">
+              <span class="card-kicker">Agressor / Boss DPS</span>
+              <h3>Dano estável em fases críticas</h3>
+              <p>
+                Mantém a base ofensiva da Striker, priorizando estabilidade, dano crítico e armas confiáveis para janelas de dano em bosses.
+              </p>
+
+              <div class="tag-row">
+                <span>Boss DPS</span>
+                <span>Grupo</span>
+                <span>Raid</span>
+                <span>Incursão</span>
+              </div>
+
+              <div class="variant-weapons">
+                <span><strong>Primária:</strong> Eagle Bearer, St. Elmo ou AR estável</span>
+                <span><strong>Secundária:</strong> Ouroboros ou SMG para curta distância</span>
+              </div>
+            </div>
           </article>
 
-          <article class="guide-row card">
-            <div>
-              <span class="chip">SMG</span>
-              <h3>Ouroboros</h3>
-              <p>Excelente para curta distância e dano agressivo. Funciona muito bem se você consegue jogar perto dos alvos.</p>
-            </div>
-            <a href="ouroboros.html">Ver Ouroboros <i class="fa-solid fa-arrow-right"></i></a>
-          </article>
+          <div class="gear-mini-grid">
+            <article class="card gear-mini-card">
+              <a href="img/equipamentos/striker/the-division2-mascara-coyote.webp"
+                class="lightbox-trigger">
 
-          <article class="guide-row card">
-            <div>
-              <span class="chip">Alternativas</span>
-              <h3>ARs e SMGs rápidas</h3>
-              <p>FAMAS, Police M4 e outras armas de boa cadência podem funcionar enquanto você ainda não possui as exóticas principais.</p>
-            </div>
-            <a href="exoticas.html">Ver exóticas <i class="fa-solid fa-arrow-right"></i></a>
-          </article>
+                <img src="img/equipamentos/striker/the-division2-mascara-coyote.webp"
+                  alt="Máscara Coyote Striker Meta"
+                  loading="lazy">
+              </a>
+            </article>
+
+            <article class="card gear-mini-card">
+              <img src="img/equipamentos/striker/the-division2-mochila.webp" alt="Mochila Agressor Striker" loading="lazy">
+              <h3>Mochila Agressor</h3>
+            </article>
+
+            <article class="card gear-mini-card">
+              <img src="img/equipamentos/striker/the-division2-colete.png" alt="Colete Ceska com Obliterar" loading="lazy">
+                <h3>Colete Ceska Vyroba</h3>
+            </article>
+
+            <article class="card gear-mini-card">
+              <img src="img/equipamentos/striker/the-division2-luva.webp" alt="Luvas Agressor Striker" loading="lazy">
+              <h3>Luvas Agressor</h3>
+            </article>
+
+            <article class="card gear-mini-card">
+              <img src="img/equipamentos/striker/the-division2-coldre.webp" alt="Coldre Agressor Striker" loading="lazy">
+              <h3>Coldre Agressor</h3>
+            </article>
+
+            <article class="card gear-mini-card">
+              <img src="img/equipamentos/striker/the-division2-joelheiras-overlordds.png" alt="Joelheiras Agressor Striker" loading="lazy">
+              <h3>Joelheiras Overlords ( Oração de Ateu )</h3>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- GAMEPLAY -->
-    <section class="section section-exotics" id="gameplay">
+    <!-- STRIKER LENDÁRIA -->
+    <section class="section section-dark" id="striker-lendaria">
       <div class="container">
         <div class="section-header split-header">
           <div>
-            <span class="eyebrow">Gameplay</span>
-            <h2>Como jogar com Striker DPS</h2>
+            <span class="eyebrow">LENDÁRIA</span>
+            <h2>Striker Lendária</h2>
             <p>
-              O segredo da build é manter ritmo. Evite ficar muito tempo sem atirar, escolha alvos grandes para gerar stacks e controle sua exposição.
+              Versão para District Union Arena, Capitol Building, Roosevelt Island e Manning National Zoo, com foco em dano sem exposição desnecessária.
             </p>
           </div>
+          <a href="#variantes" class="btn btn-outline">Voltar às variantes</a>
         </div>
 
-        <div class="grid grid-4 exotic-grid">
-          <article class="card exotic-card">
+        <div class="build-variant-layout">
+          <article class="card card-featured build-main-card">
+            <div class="card-media build-loadout-media">
+              <a href="img/builds/the-division2-striker-lendaria.png" 
+                class="lightbox-trigger">
+                <img src="img/builds/the-division2-striker-lendaria1.png" 
+                  alt="Build Striker Lendária The Division 2" 
+                  loading="lazy">
+                <span class="chip chip-meta">LENDÁRIA</span>
+              </a>
+            </div>
+
             <div class="card-body">
-              <span class="chip chip-orange">1</span>
-              <h3>Construa stacks</h3>
-              <p>Use inimigos maiores, elites ou bosses para manter acertos e carregar o bônus do set.</p>
-              <a href="#dicas">Ver dicas</a>
+              <span class="card-kicker">Agressor / Lendárias</span>
+              <h3>Dano com mais controle de risco</h3>
+              <p>
+                Ideal para jogar com cobertura, manter stacks em elites e tanques e atuar junto de builds de controle ou dano de habilidade.
+              </p>
+
+              <div class="tag-row">
+                <span>St. Elmo</span>
+                <span>Cover</span>
+                <span>Elite</span>
+                <span>Grupo</span>
+              </div>
+
+              <div class="variant-weapons">
+                <span><strong>Primária:</strong> St. Elmo pela estabilidade e controle</span>
+                <span><strong>Secundária:</strong> Rifle/AR para alvos médios e longos</span>
+              </div>
             </div>
           </article>
 
-          <article class="card exotic-card">
-            <div class="card-body">
-              <span class="chip chip-orange">2</span>
-              <h3>Controle distância</h3>
-              <p>AR funciona melhor em média distância. SMG exige curta distância e movimentação mais agressiva.</p>
-              <a href="#armas">Ver armas</a>
-            </div>
-          </article>
-
-          <article class="card exotic-card">
-            <div class="card-body">
-              <span class="chip chip-orange">3</span>
-              <h3>Evite exposição</h3>
-              <p>Mesmo com alto dano, a build não deve jogar aberta. Use cobertura e reposicionamento.</p>
-              <a href="lendarias.html">Ver Lendárias</a>
-            </div>
-          </article>
-
-          <article class="card exotic-card">
-            <div class="card-body">
-              <span class="chip chip-orange">4</span>
-              <h3>Priorize alvos</h3>
-              <p>Elimine rushers, granadeiros e inimigos perigosos antes de focar apenas no maior alvo.</p>
-              <a href="raides.html">Ver Raids</a>
-            </div>
-          </article>
+          <div class="gear-mini-grid">
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-mask"></i> Máscara</span><h3>Coyote</h3><p>Boa para aumentar crítico do grupo.</p></article>                                                                                                      
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-briefcase"></i> Mochila</span><h3>Agressor</h3><p>Stacks ajudam contra elites e tanques.</p></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-vest"></i> Colete</span><h3>Fenris/Ferris</h3><p>Obliterar para dano sem mudar o estilo.</p></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-hand-fist"></i> Luvas</span><h3>Agressor</h3><p>Peça ofensiva do set.</p></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-shield-halved"></i> Coldre</span><h3>Agressor</h3><p>Mantém o núcleo da build.</p></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-socks"></i> Joelheiras</span><h3>Agressor</h3><p>Fecha o conjunto principal.</p></article>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- DICAS / ALTERNATIVAS -->
-    <section class="section section-guides" id="dicas">
+    <!-- STRIKER SOLO -->
+    <section class="section section-featured" id="striker-solo">
       <div class="container">
         <div class="section-header split-header">
           <div>
-            <span class="eyebrow">Dicas e Alternativas</span>
-            <h2>Como adaptar a build</h2>
+            <span class="eyebrow">SOLO</span>
+            <h2>Striker Solo</h2>
             <p>
-              A Striker DPS pode ser ajustada para farm, raid, solo ou grupo. O ideal é manter o núcleo da build e adaptar armas e peças complementares.
+              Configuração voltada para jogadores que querem farmar, fazer missões e pontos de controle sem depender de grupo.
             </p>
           </div>
+          <a href="#variantes" class="btn btn-outline">Voltar às variantes</a>
         </div>
 
-        <div class="guide-list">
-          <article class="guide-row card">
-            <div>
-              <span class="chip">Solo</span>
-              <h3>Use mais segurança se estiver morrendo</h3>
-              <p>Para jogar solo, considere ajustes que aumentem sobrevivência sem destruir o dano principal.</p>
+        <div class="build-variant-layout">
+          <article class="card card-featured build-main-card">
+            <div class="card-media build-loadout-media">
+              <a href="img/builds/the-division2-build-striker-solo.png" 
+                class="lightbox-trigger">
+                <img src="img/builds/the-division2-striker-solo.png" 
+                  alt="Build Striker Solo The Division 2" 
+                  loading="lazy">
+                <span class="chip chip-meta">SOLO</span>
+              </a>
             </div>
-            <a href="builds-hibridas.html">Ver híbridas <i class="fa-solid fa-arrow-right"></i></a>
+
+            <div class="card-body">
+              <span class="card-kicker">Agressor / Sobrevivência</span>
+              <h3>Mais segurança sem perder o dano base</h3>
+              <p>
+                Usa a força da Striker com opções de sustentação para quem joga sozinho e precisa sobreviver a erros, rushers e pressão lateral.
+              </p>
+
+              <div class="tag-row">
+                <span>Memento</span>
+                <span>Solo</span>
+                <span>Farm</span>
+                <span>Sustain</span>
+              </div>
+
+              <div class="variant-weapons">
+                <span><strong>Primária:</strong> St. Elmo, FAMAS ou Police M4</span>
+                <span><strong>Secundária:</strong> Scorpio, Ouroboros ou SMG segura</span>
+              </div>
+            </div>
           </article>
 
-          <article class="guide-row card">
-            <div>
-              <span class="chip">Raid</span>
-              <h3>Priorize dano consistente</h3>
-              <p>Em raids, o mais importante é manter dano em fases críticas e seguir a função combinada com o grupo.</p>
+          <div class="gear-mini-grid">
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-mask"></i> Máscara</span><h3>Agressor</h3><p>Ajuda a manter o bônus de 4 peças.</p></article>            
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-briefcase"></i> Mochila</span><h3>Memento</h3><p>Armadura bônus, regen e dano solo.</p></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-vest"></i> Colete</span><h3>Grupo Ferris</h3><p>Obliterar para dano consistente.</p></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-hand-fist"></i> Luvas</span><h3>Agressor</h3><p>Peça ofensiva do set.</p></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-shield-halved"></i> Coldre</span><h3>Agressor</h3><p>Base para completar o conjunto.</p></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-socks"></i> Joelheiras</span><h3>Agressor</h3><p>Fecha a composição solo.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRIKER FARM -->
+    <section class="section section-dark" id="striker-farm">
+      <div class="container">
+        <div class="section-header split-header">
+          <div>
+            <span class="eyebrow">FARM</span>
+            <h2>Striker Farm</h2>
+            <p>
+              Versão simples, fácil de montar e eficiente para SHD, Countdown, Summit, pontos de controle, materiais e proficiência.
+            </p>
+          </div>
+          <a href="#variantes" class="btn btn-outline">Voltar às variantes</a>
+        </div>
+
+        <div class="build-variant-layout">
+          <article class="card card-featured build-main-card">
+            <div class="card-media build-loadout-media">
+              <a href="img/builds/the-division2-build-striker-farm.png" 
+                class="lightbox-trigger">
+                <img src="img/builds/the-division2-build-striker-farm.png" 
+                  alt="Build Striker Farm The Division 2" 
+                  loading="lazy">
+                <span class="chip chip-meta">FARM</span>
+              </a>
             </div>
-            <a href="raides.html">Ver raids <i class="fa-solid fa-arrow-right"></i></a>
+
+            <div class="card-body">
+              <span class="card-kicker">Agressor / Progressão</span>
+              <h3>Build prática para evoluir rápido</h3>
+              <p>
+                Mantém o núcleo da Striker e usa armas fáceis ou exóticas disponíveis para acelerar farm de XP, materiais e proficiência.
+              </p>
+
+              <div class="tag-row">
+                <span>SHD</span>
+                <span>Countdown</span>
+                <span>Materiais</span>
+                <span>Proficiência</span>
+              </div>
+
+              <div class="variant-weapons">
+                <span><strong>Primária:</strong> Police M4, FAMAS, St. Elmo ou AR rápida</span>
+                <span><strong>Secundária:</strong> SMG de alta cadência ou arma para proficiência</span>
+              </div>
+            </div>
           </article>
 
-          <article class="guide-row card">
-            <div>
-              <span class="chip">Progressão</span>
-              <h3>Intensifique arma principal primeiro</h3>
-              <p>Como a build usa muito a arma principal, ela geralmente deve ser uma das prioridades na progressão.</p>
-            </div>
-            <a href="intensificacao.html">Ver Intensificação <i class="fa-solid fa-arrow-right"></i></a>
-          </article>
+          <div class="gear-mini-grid">
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-mask"></i> Máscara</span><h3>Agressor</h3><p>Fácil de encaixar no farm.</p></article>            
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-briefcase"></i> Mochila</span><h3>Agressor</h3><p>Mantém a força do conjunto.</p></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-vest"></i> Colete</span><h3>Grupo Ferris</h3><p>Obliterar para dano simples e eficiente.</p></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-hand-fist"></i> Luvas</span><h3>Agressor</h3><p>Peça padrão da build.</p></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-shield-halved"></i> Coldre</span><h3>Agressor</h3><p>Completa o núcleo principal.</p></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-socks"></i> Joelheiras</span><h3>Grupo Sombra/Ceska</h3><p>Ajuste crítico conforme seus atributos.</p></article>
+          </div>
         </div>
       </div>
     </section>
@@ -422,12 +610,16 @@
     <section class="section final-cta">
       <div class="container final-cta-box">
         <span class="eyebrow">Próximo passo</span>
-        <h2>Monte a Striker e evolua com foco</h2>
+        <h2>Escolha a variante e ajuste sua Striker</h2>
         <p>
-          Depois de montar a base da build, ajuste armas, chance crítica, dano crítico e Intensificação para melhorar o desempenho nas atividades que você mais joga.
+        A Striker DPS é uma das builds mais fortes de The Division 2, mas não existe uma única configuração ideal para todos os agentes. 
+        Use as variantes desta página como ponto de partida, faça ajustes, teste combinações diferentes e descubra qual versão da Striker funciona melhor para o seu estilo de jogo.
+        </p>
+        <p>
+          <strong>A melhor versão da Striker é aquela que funciona para você.</strong> 
         </p>
         <div class="hero-actions center-actions">
-          <a href="intensificacao.html" class="btn btn-primary">Ver Intensificação</a>
+          <a href="#variantes" class="btn btn-primary">Ver Variantes</a>
           <a href="builds-dps.html" class="btn btn-secondary">Outras Builds DPS</a>
         </div>
       </div>
@@ -479,6 +671,18 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <!-- LIGHTBOX -->
+<div class="lightbox-overlay" id="lightbox">
+
+  <button class="lightbox-close" id="lightbox-close">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+
+  <img src="" alt="" id="lightbox-image">
+</div>
+
+<!-- SCRIPTS -->
+<script src="js/main.js"></script>
+
 </body>
 </html>

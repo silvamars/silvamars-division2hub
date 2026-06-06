@@ -34,41 +34,6 @@ if (bgImage) {
   });
 }
 
-/*** Lightbox para imagens ***/
-  document.addEventListener("DOMContentLoaded", () => {
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const triggers = document.querySelectorAll(".lightbox-trigger");
-  const closeBtn = document.querySelector(".lightbox-close");
-
-  if (!lightbox || !lightboxImg || !closeBtn || triggers.length === 0) return;
-
-  triggers.forEach(img => {
-    img.addEventListener("click", () => {
-      lightbox.classList.add("active");
-      lightboxImg.src = img.src;
-      lightboxImg.alt = img.alt || "";
-    });
-  });
-
-  closeBtn.addEventListener("click", () => {
-    lightbox.classList.remove("active");
-  });
-
-  lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) {
-      lightbox.classList.remove("active");
-    }
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      lightbox.classList.remove("active");
-    }
-  });
-});
-
-
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -76,7 +41,56 @@ if (navToggle && navMenu) {
   navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('is-active');
     navMenu.classList.toggle('is-open');
+
     const expanded = navToggle.getAttribute('aria-expanded') === 'true';
     navToggle.setAttribute('aria-expanded', String(!expanded));
   });
 }
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-image");
+  const lightboxClose = document.getElementById("lightbox-close");
+  const triggers = document.querySelectorAll(".lightbox-trigger");
+
+  if (!lightbox || !lightboxImg || !lightboxClose || triggers.length === 0) return;
+
+  triggers.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const img = item.querySelector("img");
+
+      lightboxImg.src = item.href;
+      lightboxImg.alt = img ? img.alt : "";
+
+      lightbox.classList.add("active");
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.classList.remove("active");
+    lightboxImg.src = "";
+    lightboxImg.alt = "";
+    document.body.style.overflow = "";
+  }
+
+  lightboxClose.addEventListener("click", closeLightbox);
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && lightbox.classList.contains("active")) {
+      closeLightbox();
+    }
+  });
+});
