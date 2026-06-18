@@ -74,9 +74,9 @@
           </p>
 
           <div class="hero-actions">
-            <a href="#montagem" class="btn btn-primary">
+            <a href="#variantes" class="btn btn-primary">
               <i class="fa-solid fa-layer-group"></i>
-              Ver Montagem
+              Ver Variantes
             </a>
             <a href="#gameplay" class="btn btn-secondary">
               <i class="fa-solid fa-microchip"></i>
@@ -157,7 +157,7 @@
                 <span>Countdown</span>
                 <span>PvE</span>
               </div>
-              <a href="#montagem" class="card-link">Ver composição <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#variantes" class="card-link">Ver variantes <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </article>
 
@@ -173,7 +173,7 @@
               <span class="chip">Atenção</span>
               <h3>Posicionamento importa</h3>
               <p>Torreta mal colocada perde eficiência e pode ser destruída rápido.</p>
-              <a href="#dicas">Ver dicas</a>
+              <a href="#gameplay">Ver dicas</a>
             </article>
 
             <article class="card compact-card">
@@ -194,229 +194,375 @@
       </div>
     </section>
 
-    <!-- MONTAGEM -->
-    <section class="section section-dark" id="montagem">
+    <!-- NAVEGAÇÃO DAS VARIANTES -->
+    <section class="section section-guides" id="variantes">
       <div class="container">
         <div class="section-header center-header">
-          <span class="eyebrow">Montagem</span>
-          <h2>Peças e estrutura recomendada</h2>
+          <span class="eyebrow">Variantes Skill</span>
+          <h2>Escolha sua versão Skill para Countdown</h2>
           <p>
-            A base deve priorizar dano de habilidade, aceleração de habilidade e sinergia com armas/talentos que aumentam a eficiência das skills.
+            A base Skill pode ser montada para farm seguro, controle de grupo, reset de habilidades ou suporte contra Hunters. Use os atalhos abaixo para ir direto à versão ideal para seu objetivo.
           </p>
         </div>
 
-        <div class="grid grid-4 hub-grid">
-          <article class="hub-card">
-            <i class="fa-solid fa-microchip"></i>
-            <h3>Skill Tier</h3>
-            <p>Priorize tiers de habilidade para maximizar dano e eficiência das skills.</p>
-          </article>
+        <div class="variant-nav-grid">
+          <a href="#skill-meta" class="card variant-nav-card">
+            <div>
+              <i class="fa-solid fa-microchip"></i>
+              <span class="chip">META PvE</span>
+              <h3>Skill Meta</h3>
+              <p>Torreta e drone com dano constante para farm seguro.</p>
+            </div>
+          </a>
 
-          <article class="hub-card">
-            <i class="fa-solid fa-satellite-dish"></i>
-            <h3>Torreta</h3>
-            <p>Serve como fonte fixa de dano e controle de área quando bem posicionada.</p>
-          </article>
+          <a href="#skill-anti-hunter" class="card variant-nav-card">
+            <div>
+              <i class="fa-solid fa-user-secret"></i>
+              <span class="chip">COUNTDOWN</span>
+              <h3>Anti-Hunter</h3>
+              <p>Mais controle para o final do Countdown contra Hunters.</p>
+            </div>
+          </a>
 
-          <article class="hub-card">
-            <i class="fa-solid fa-helicopter-symbol"></i>
-            <h3>Drone</h3>
-            <p>Pressiona inimigos móveis e ajuda a dividir atenção do campo.</p>
-          </article>
+          <a href="#skill-rigger" class="card variant-nav-card">
+            <div>
+              <i class="fa-solid fa-rotate"></i>
+              <span class="chip">RESET</span>
+              <h3>Rigger</h3>
+              <p>Reposiciona habilidades com mais frequência e segurança.</p>
+            </div>
+          </a>
 
-          <article class="hub-card">
-            <i class="fa-solid fa-gem"></i>
-            <h3>Atributos</h3>
-            <p>Dano de habilidade e aceleração de habilidade são prioridades comuns.</p>
-          </article>
+          <a href="#skill-hard-wired" class="card variant-nav-card">
+            <div>
+              <i class="fa-solid fa-bolt"></i>
+              <span class="chip">COOLDOWN</span>
+              <h3>Hard Wired</h3>
+              <p>Build para alternar habilidades e acelerar recargas.</p>
+            </div>
+          </a>
+
+          <a href="#skill-eclipse" class="card variant-nav-card">
+            <div>
+              <i class="fa-solid fa-biohazard"></i>
+              <span class="chip">CC</span>
+              <h3>Eclipse CC</h3>
+              <p>Controle de grupo com status, espuma, fogo e pulso.</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ATRIBUTOS / TALENTOS -->
-    <section class="section section-build-goals" id="atributos">
+    <!-- SKILL META -->
+    <section class="section section-dark" id="skill-meta">
       <div class="container">
         <div class="section-header split-header">
           <div>
-            <span class="eyebrow">Atributos e Talentos</span>
-            <h2>O que priorizar na build</h2>
+            <span class="eyebrow">META PvE</span>
+            <h2>Skill Meta — Torreta + Drone</h2>
             <p>
-              A build Skill precisa reforçar o desempenho das habilidades. O dano direto da arma ajuda, mas a prioridade é fazer suas skills trabalharem melhor.
+              Versão mais direta para farm seguro. A torreta segura posição, o drone pressiona alvos móveis e o Capacitor aumenta o dano conforme você mantém disparos e habilidades ativas.
             </p>
           </div>
+          <a href="#variantes" class="btn btn-outline">Voltar às variantes</a>
         </div>
 
-        <div class="grid grid-3 endgame-grid">
-          <article class="card endgame-card">
-            <div class="icon-badge"><i class="fa-solid fa-burst"></i></div>
-            <h3>Dano de Habilidade</h3>
-            <p>
-              Aumenta o impacto da torreta e do drone, melhorando limpeza e pressão contínua.
-            </p>
-            <a href="builds-skill.html">Ver Hub Skill</a>
+        <div class="build-variant-layout">
+          <article class="card card-featured build-main-card">
+            <div class="card-media build-loadout-media">
+              <a href="img/builds/skill-countdown.webp" class="lightbox-trigger">
+                <img src="img/builds/skill-countdown.webp" alt="Build Skill Meta Torreta e Drone The Division 2" loading="lazy">
+                <span class="chip chip-meta">META</span>
+              </a>
+            </div>
+            <div class="card-body">
+              <span class="card-kicker">Imperatriz / Hana-U / Wyvern</span>
+              <h3>Base principal da build</h3>
+              <p>
+                Usa 6 núcleos amarelos, dano de habilidade e aceleração para manter torreta e drone ativos quase o tempo todo. É a versão mais fácil de usar em Countdown, missões e farm PvE.
+              </p>
+              <div class="tag-row">
+                <span>Capacitor</span>
+                <span>Torreta</span>
+                <span>Drone</span>
+                <span>6 Skill Tier</span>
+                <span>Dano Skill</span>
+                <span>Farm Seguro</span>
+              </div>
+              <div class="variant-weapons">
+                <span><strong>Primária:</strong> Capacitor</span>
+                <span><strong>Secundária:</strong> Test Subject, Harmony ou arma com Sincronia</span>
+                <span><strong>Especialização:</strong> Técnico</span>
+              </div>
+            </div>
           </article>
 
-          <article class="card endgame-card">
-            <div class="icon-badge"><i class="fa-solid fa-rotate"></i></div>
-            <h3>Aceleração</h3>
-            <p>
-              Reduz tempo de recarga e deixa a build mais consistente caso uma skill seja destruída.
-            </p>
-            <a href="#montagem">Ver montagem</a>
-          </article>
-
-          <article class="card endgame-card">
-            <div class="icon-badge"><i class="fa-solid fa-gun"></i></div>
-            <h3>Sinergia com arma</h3>
-            <p>
-              Armas como Capacitor ajudam a aumentar o dano da build quando usadas de forma ativa.
-            </p>
-            <a href="#armas">Ver armas</a>
-          </article>
+          <div class="gear-mini-grid">
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-mask"></i> Máscara Imperatriz</span><ul class="gear-stats"><li class="utility">Núcleo Skill <strong>+1</strong></li><li class="utility">Dano Skill <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-briefcase"></i> Mochila Hana-U</span><ul class="gear-stats"><li class="utility">Talento <strong>Armas Combinadas</strong></li><li class="utility">Dano Skill <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-vest"></i> Colete Imperatriz</span><ul class="gear-stats"><li class="utility">Talento <strong>Impacto Cinético</strong></li><li class="utility">Dano Skill <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-hand-fist"></i> Luvas Imperatriz</span><ul class="gear-stats"><li class="utility">Núcleo Skill <strong>+1</strong></li><li class="utility">Dano Skill <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-shield-halved"></i> Coldre Waveform</span><ul class="gear-stats"><li class="utility">Núcleo Skill <strong>+1</strong></li><li class="utility">Talento <strong>Corrente Alternada</strong></li><li class="utility">Dano Skill <strong>variável</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-socks"></i> Joelheiras Wyvern</span><ul class="gear-stats"><li class="utility">Marca <strong>+10% Dano Skill</strong></li><li class="utility">Dano Skill <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ARMAS -->
-    <section class="section section-guides" id="armas">
+    <!-- SKILL ANTI-HUNTER -->
+    <section class="section section-featured" id="skill-anti-hunter">
       <div class="container">
         <div class="section-header split-header">
           <div>
-            <span class="eyebrow">Armas</span>
-            <h2>Melhores armas para Skill Countdown</h2>
+            <span class="eyebrow">COUNTDOWN</span>
+            <h2>Skill Anti-Hunter</h2>
             <p>
-              A arma ideal deve complementar as habilidades, aumentar dano ou trazer utilidade para o farm.
+              Variante feita para o final do Countdown. Em vez de depender só de torreta e drone, entra com controle para reduzir o impacto de Hunters, rushers e inimigos que quebram a linha do grupo.
             </p>
           </div>
+          <a href="#variantes" class="btn btn-outline">Voltar às variantes</a>
         </div>
 
-        <div class="guide-list">
-          <article class="guide-row card">
-            <div>
-              <span class="chip">Exótica</span>
-              <h3>Capacitor</h3>
-              <p>Principal recomendação para builds Skill pela sinergia direta com dano de habilidade e estilo ativo.</p>
+        <div class="build-variant-layout">
+          <article class="card card-featured build-main-card">
+            <div class="card-media build-loadout-media">
+              <a href="img/builds/skill-countdown.webp" class="lightbox-trigger">
+                <img src="img/builds/skill-countdown.webp" alt="Build Skill Anti-Hunter Countdown The Division 2" loading="lazy">
+                <span class="chip chip-meta">ANTI-HUNTER</span>
+              </a>
             </div>
-            <a href="capacitor.html">Ver Capacitor <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="card-body">
+              <span class="card-kicker">Controle / Proteção / Countdown</span>
+              <h3>Mais segurança na extração</h3>
+              <p>
+                Mantém a base amarela, mas troca parte do foco para controle. Use espuma, armadilha de choque ou pulso disruptor quando o grupo estiver chegando na fase dos Hunters.
+              </p>
+              <div class="tag-row">
+                <span>Riot Foam</span>
+                <span>Jammer Pulse</span>
+                <span>Shock Trap</span>
+                <span>Grupo</span>
+                <span>Extração</span>
+              </div>
+              <div class="variant-weapons">
+                <span><strong>Primária:</strong> Scorpio ou Capacitor</span>
+                <span><strong>Secundária:</strong> Test Subject ou arma com Sincronia</span>
+                <span><strong>Especialização:</strong> Técnico ou Sobrevivencialista</span>
+              </div>
+            </div>
           </article>
 
-          <article class="guide-row card">
-            <div>
-              <span class="chip">Alternativa</span>
-              <h3>Harmony</h3>
-              <p>Boa opção para alternar dano de arma e dano de habilidade enquanto mantém sinergia com as skills.</p>
+          <div class="gear-mini-grid">
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-mask"></i> Máscara Imperatriz</span><ul class="gear-stats"><li class="utility">Núcleo Skill <strong>+1</strong></li><li class="utility">Dano Skill <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-briefcase"></i> Mochila Hana-U</span><ul class="gear-stats"><li class="utility">Talento <strong>Armas Combinadas</strong></li><li class="utility">Dano Skill <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-vest"></i> Colete Golan/Hana-U</span><ul class="gear-stats"><li class="utility">Talento <strong>Impacto Cinético</strong></li><li class="utility">Status <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-hand-fist"></i> Luvas Imperatriz</span><ul class="gear-stats"><li class="utility">Núcleo Skill <strong>+1</strong></li><li class="utility">Dano Skill <strong>10%</strong></li><li class="defense">Proteção Perigos <strong>opcional</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-shield-halved"></i> Coldre Yaahl</span><ul class="gear-stats"><li class="defense">Proteção Perigos <strong>10%</strong></li><li class="utility">Dano Skill <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-socks"></i> Joelheiras Imperatriz</span><ul class="gear-stats"><li class="utility">Núcleo Skill <strong>+1</strong></li><li class="utility">Dano Skill <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILL RIGGER -->
+    <section class="section section-dark" id="skill-rigger">
+      <div class="container">
+        <div class="section-header split-header">
+          <div>
+            <span class="eyebrow">RESET</span>
+            <h2>Rigger Skill</h2>
+            <p>
+              Variante para quem reposiciona habilidades o tempo todo. O Rigger facilita recuperar torreta e drone antes de serem destruídos, mantendo pressão constante com menos tempo morto.
+            </p>
+          </div>
+          <a href="#variantes" class="btn btn-outline">Voltar às variantes</a>
+        </div>
+
+        <div class="build-variant-layout">
+          <article class="card card-featured build-main-card">
+            <div class="card-media build-loadout-media">
+              <a href="img/builds/skill-countdown.webp" class="lightbox-trigger">
+                <img src="img/builds/skill-countdown.webp" alt="Build Rigger Skill Countdown The Division 2" loading="lazy">
+                <span class="chip chip-meta">RIGGER</span>
+              </a>
             </div>
-            <a href="exoticas.html">Ver exóticas <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="card-body">
+              <span class="card-kicker">Rigger / Torreta / Drone</span>
+              <h3>Reposicionamento rápido</h3>
+              <p>
+                Ideal para mapas com muita movimentação. Você coloca a torreta, pressiona com drone e recupera habilidades quando precisar mudar de sala ou evitar que sejam quebradas.
+              </p>
+              <div class="tag-row">
+                <span>4x Rigger</span>
+                <span>Reset</span>
+                <span>Torreta</span>
+                <span>Drone</span>
+                <span>Farm</span>
+              </div>
+              <div class="variant-weapons">
+                <span><strong>Primária:</strong> Capacitor</span>
+                <span><strong>Secundária:</strong> Harmony ou Test Subject</span>
+                <span><strong>Especialização:</strong> Técnico</span>
+              </div>
+            </div>
           </article>
 
-          <article class="guide-row card">
-            <div>
-              <span class="chip">Secundária</span>
-              <h3>Arma confortável</h3>
-              <p>Use uma arma secundária estável para finalizar inimigos, ativar talentos ou se defender quando as skills estiverem em recarga.</p>
+          <div class="gear-mini-grid">
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-mask"></i> Máscara Rigger</span><ul class="gear-stats"><li class="utility">Núcleo Skill <strong>+1</strong></li><li class="utility">Dano Skill <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-briefcase"></i> Mochila Rigger</span><ul class="gear-stats"><li class="utility">Talento <strong>Mochila do Set</strong></li><li class="utility">Dano Skill <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-vest"></i> Colete Wyvern</span><ul class="gear-stats"><li class="utility">Talento <strong>Impacto Cinético</strong></li><li class="utility">Dano Skill <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-hand-fist"></i> Luvas Rigger</span><ul class="gear-stats"><li class="utility">Núcleo Skill <strong>+1</strong></li><li class="utility">Dano Skill <strong>10%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-shield-halved"></i> Coldre Rigger</span><ul class="gear-stats"><li class="utility">Núcleo Skill <strong>+1</strong></li><li class="utility">Dano Skill <strong>10%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-socks"></i> Joelheiras Hana-U</span><ul class="gear-stats"><li class="utility">Marca <strong>+10% Aceleração</strong></li><li class="utility">Dano Skill <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILL HARD WIRED -->
+    <section class="section section-featured" id="skill-hard-wired">
+      <div class="container">
+        <div class="section-header split-header">
+          <div>
+            <span class="eyebrow">COOLDOWN</span>
+            <h2>Hard Wired Skill</h2>
+            <p>
+              Build para alternar habilidades e reduzir tempo de recarga. Funciona bem para quem gosta de usar mina, colmeia, torreta ou outras habilidades com mais frequência.
+            </p>
+          </div>
+          <a href="#variantes" class="btn btn-outline">Voltar às variantes</a>
+        </div>
+
+        <div class="build-variant-layout">
+          <article class="card card-featured build-main-card">
+            <div class="card-media build-loadout-media">
+              <a href="img/builds/skill-countdown.webp" class="lightbox-trigger">
+                <img src="img/builds/skill-countdown.webp" alt="Build Hard Wired Skill Countdown The Division 2" loading="lazy">
+                <span class="chip chip-meta">HARD WIRED</span>
+              </a>
             </div>
-            <a href="builds-skill.html">Ver Skill Hub <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="card-body">
+              <span class="card-kicker">Hard Wired / Spam Skill</span>
+              <h3>Menos espera entre habilidades</h3>
+              <p>
+                Boa para farm e missões quando você quer habilidades disponíveis com frequência. Também serve como alternativa barata enquanto ainda não fechou uma build amarela perfeita.
+              </p>
+              <div class="tag-row">
+                <span>4x Hard Wired</span>
+                <span>Cooldown</span>
+                <span>Mina</span>
+                <span>Colmeia</span>
+                <span>Torreta</span>
+              </div>
+              <div class="variant-weapons">
+                <span><strong>Primária:</strong> Capacitor</span>
+                <span><strong>Secundária:</strong> Test Subject, Harmony ou arma com Sincronia</span>
+                <span><strong>Especialização:</strong> Técnico</span>
+              </div>
+            </div>
           </article>
+
+          <div class="gear-mini-grid">
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-mask"></i> Máscara Hard Wired</span><ul class="gear-stats"><li class="utility">Núcleo Skill <strong>+1</strong></li><li class="utility">Dano Skill <strong>10%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-briefcase"></i> Mochila Hana-U</span><ul class="gear-stats"><li class="utility">Talento <strong>Armas Combinadas</strong></li><li class="utility">Dano Skill <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-vest"></i> Colete Wyvern</span><ul class="gear-stats"><li class="utility">Talento <strong>Impacto Cinético</strong></li><li class="utility">Dano Skill <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-hand-fist"></i> Luvas Hard Wired</span><ul class="gear-stats"><li class="utility">Núcleo Skill <strong>+1</strong></li><li class="utility">Dano Skill <strong>10%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-shield-halved"></i> Coldre Hard Wired</span><ul class="gear-stats"><li class="utility">Núcleo Skill <strong>+1</strong></li><li class="utility">Dano Skill <strong>10%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-socks"></i> Joelheiras Hard Wired</span><ul class="gear-stats"><li class="utility">Núcleo Skill <strong>+1</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILL ECLIPSE -->
+    <section class="section section-dark" id="skill-eclipse">
+      <div class="container">
+        <div class="section-header split-header">
+          <div>
+            <span class="eyebrow">CONTROLE</span>
+            <h2>Eclipse Protocol CC</h2>
+            <p>
+              Variante focada em controle de grupo. Em vez de causar dano automático com torreta e drone, ela trava inimigos com efeitos de status para o time eliminar com segurança.
+            </p>
+          </div>
+          <a href="#variantes" class="btn btn-outline">Voltar às variantes</a>
+        </div>
+
+        <div class="build-variant-layout">
+          <article class="card card-featured build-main-card">
+            <div class="card-media build-loadout-media">
+              <a href="img/builds/skill-countdown.webp" class="lightbox-trigger">
+                <img src="img/builds/skill-countdown.webp" alt="Build Eclipse Protocol Controle Countdown The Division 2" loading="lazy">
+                <span class="chip chip-meta">CC</span>
+              </a>
+            </div>
+            <div class="card-body">
+              <span class="card-kicker">Eclipse / Status / Grupo</span>
+              <h3>Controle para facilitar o DPS do time</h3>
+              <p>
+                Excelente quando o grupo já tem dano suficiente. Use espuma, fogo ou pulso para travar rushers, controlar elites e reduzir o caos em salas apertadas.
+              </p>
+              <div class="tag-row">
+                <span>4x Eclipse</span>
+                <span>Vile</span>
+                <span>Riot Foam</span>
+                <span>Firestarter</span>
+                <span>Jammer</span>
+              </div>
+              <div class="variant-weapons">
+                <span><strong>Primária:</strong> Scorpio</span>
+                <span><strong>Secundária:</strong> Capacitor ou arma com Perpetuação</span>
+                <span><strong>Especialização:</strong> Sobrevivencialista</span>
+              </div>
+            </div>
+          </article>
+
+          <div class="gear-mini-grid">
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-mask"></i> Máscara Vile</span><ul class="gear-stats"><li class="utility">Status <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li><li class="utility">Dano por efeito <strong>passivo</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-briefcase"></i> Mochila Eclipse</span><ul class="gear-stats"><li class="utility">Talento <strong>Mochila do Set</strong></li><li class="utility">Status <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-vest"></i> Colete Eclipse</span><ul class="gear-stats"><li class="utility">Talento <strong>Colete do Set</strong></li><li class="utility">Status <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-hand-fist"></i> Luvas Eclipse</span><ul class="gear-stats"><li class="utility">Núcleo Skill <strong>+1</strong></li><li class="utility">Status <strong>10%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-shield-halved"></i> Coldre Eclipse</span><ul class="gear-stats"><li class="utility">Núcleo Skill <strong>+1</strong></li><li class="utility">Status <strong>10%</strong></li></ul></article>
+            <article class="card gear-mini-card"><span class="gear-slot"><i class="fa-solid fa-socks"></i> Joelheiras Golan/Wyvern</span><ul class="gear-stats"><li class="utility">Status <strong>10%</strong></li><li class="utility">Aceleração <strong>12%</strong></li><li class="utility">Núcleo Skill <strong>recalibrado</strong></li></ul></article>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- GAMEPLAY -->
-    <section class="section section-exotics" id="gameplay">
+    <section class="section section-featured" id="gameplay">
       <div class="container">
-        <div class="section-header split-header">
-          <div>
-            <span class="eyebrow">Gameplay</span>
-            <h2>Como jogar com Skill Countdown</h2>
-            <p>
-              O segredo é posicionar bem as habilidades, manter distância segura e usar a arma para complementar o dano, não para se expor sem necessidade.
-            </p>
-          </div>
+        <div class="section-header center-header">
+          <span class="eyebrow">Como jogar</span>
+          <h2>Dicas rápidas para jogar de Skill no Countdown</h2>
+          <p>
+            Build Skill funciona melhor quando você joga posicionado, usa cobertura e reposiciona as habilidades antes que elas sejam destruídas.
+          </p>
         </div>
 
-        <div class="grid grid-4 exotic-grid">
-          <article class="card exotic-card">
-            <div class="card-body">
-              <span class="chip chip-orange">1</span>
-              <h3>Posicione a torreta</h3>
-              <p>Coloque em ângulos que tenham visão dos inimigos, mas que não sejam destruídos rapidamente.</p>
-              <a href="#dicas">Ver dicas</a>
-            </div>
+        <div class="grid-3">
+          <article class="card compact-card">
+            <span class="chip">Posicionamento</span>
+            <h3>Coloque a torreta em ângulo alto</h3>
+            <p>Evite deixar a torreta no chão ou muito exposta. Quanto melhor o ângulo, mais tempo ela fica viva e causando dano.</p>
           </article>
 
-          <article class="card exotic-card">
-            <div class="card-body">
-              <span class="chip chip-orange">2</span>
-              <h3>Use o drone para pressão</h3>
-              <p>O drone ajuda a perseguir inimigos móveis e dividir a atenção do campo.</p>
-              <a href="#montagem">Ver skills</a>
-            </div>
+          <article class="card compact-card">
+            <span class="chip">Countdown</span>
+            <h3>Cuidado com Hunters</h3>
+            <p>No final da atividade, priorize controle, pulso disruptor ou armas seguras. Não dependa cegamente de torreta e drone.</p>
           </article>
 
-          <article class="card exotic-card">
-            <div class="card-body">
-              <span class="chip chip-orange">3</span>
-              <h3>Atire para reforçar</h3>
-              <p>Com Capacitor, jogar ativo melhora o desempenho da build e mantém pressão constante.</p>
-              <a href="#armas">Ver armas</a>
-            </div>
-          </article>
-
-          <article class="card exotic-card">
-            <div class="card-body">
-              <span class="chip chip-orange">4</span>
-              <h3>Evite rush</h3>
-              <p>Skill não deve jogar como full DPS. Use cobertura, recuo e controle de espaço.</p>
-              <a href="lendarias.html">Ver Lendárias</a>
-            </div>
+          <article class="card compact-card">
+            <span class="chip">Capacitor</span>
+            <h3>Atire para manter pressão</h3>
+            <p>Mesmo sendo Skill, você precisa participar do combate. O Capacitor melhora muito a sinergia entre arma e habilidades.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- DICAS / ALTERNATIVAS -->
-    <section class="section section-guides" id="dicas">
-      <div class="container">
-        <div class="section-header split-header">
-          <div>
-            <span class="eyebrow">Dicas e Alternativas</span>
-            <h2>Como adaptar a build</h2>
-            <p>
-              A Skill Countdown pode ser ajustada para farm solo, grupo, lendárias ou variações híbridas com dano de arma.
-            </p>
-          </div>
-        </div>
-
-        <div class="guide-list">
-          <article class="guide-row card">
-            <div>
-              <span class="chip">Solo</span>
-              <h3>Jogue com paciência</h3>
-              <p>Use as skills para iniciar o combate e só se exponha quando os inimigos estiverem pressionados ou distraídos.</p>
-            </div>
-            <a href="builds-hibridas.html">Ver híbridas <i class="fa-solid fa-arrow-right"></i></a>
-          </article>
-
-          <article class="guide-row card">
-            <div>
-              <span class="chip">Lendária</span>
-              <h3>Considere mais controle</h3>
-              <p>Em conteúdos difíceis, status effect ou habilidades de controle podem ser mais úteis que dano puro.</p>
-            </div>
-            <a href="lendarias.html">Ver Lendárias <i class="fa-solid fa-arrow-right"></i></a>
-          </article>
-
-          <article class="guide-row card">
-            <div>
-              <span class="chip">Progressão</span>
-              <h3>Intensifique o que reutiliza</h3>
-              <p>Priorize Capacitor e peças usadas em várias builds Skill antes de evoluir variações muito específicas.</p>
-            </div>
-            <a href="intensificacao.html">Ver Intensificação <i class="fa-solid fa-arrow-right"></i></a>
-          </article>
-        </div>
-      </div>
-    </section>
 
     <!-- CTA FINAL -->
     <section class="section final-cta">
@@ -424,7 +570,7 @@
         <span class="eyebrow">Próximo passo</span>
         <h2>Use a build para farmar com mais segurança</h2>
         <p>
-          Depois de montar a base, ajuste habilidades, atributos e arma principal para melhorar consistência no farm e preparar variações para conteúdos mais difíceis.
+          Escolha uma das variantes como ponto de partida, ajuste habilidades conforme o grupo e troque para controle quando o Countdown chegar na fase dos Hunters.
         </p>
         <div class="hero-actions center-actions">
           <a href="intensificacao.html" class="btn btn-primary">Ver Intensificação</a>

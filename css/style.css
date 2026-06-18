@@ -2483,15 +2483,48 @@ p {
   justify-content: space-between;
 }
 
+/* Atributos ofensivos */
+.gear-stats .offense::marker {
+  color: #F05A28;
+}
+
+/* Atributos Defensivos */
+.gear-stats .defense::marker {
+  color: #3b82f6;
+}
+
+/* Talentos ou bônus especiais */
+.gear-stats .utility::marker {
+  color: #facc15;
+}
+
+.gear-brand {
+  display: block;
+  margin-bottom: 12px;
+  color: #ff6b35;
+  font-weight: 700;
+}
+
 .gear-mini-card .gear-slot {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 8px;
+  margin-bottom: 6px;
   color: var(--muted, #9ca3af);
   font-size: .78rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: .08em;
+}
+
+.gear-mini-card .gear-brand {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  color: var(--orange, #ff8a00);
+  font-size: .95rem;
+  font-weight: 800;
+  line-height: 1.2;
 }
 
 .gear-mini-card .gear-slot i {
