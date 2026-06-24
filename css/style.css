@@ -410,6 +410,7 @@ p {
   pointer-events: none;
 }
 
+
 .stat-card {
   min-height: 104px;
   padding: 18px;
@@ -2130,6 +2131,29 @@ p {
 
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+.build-note {
+  grid-column: 1 / -1;
+  padding: 18px 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 18px;
+}
+
+.build-note h3 {
+  margin: 10px 0 8px;
+}
+
+.build-note p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.build-note p + p {
+  margin-top: 10px;
 }
 
 .build-loadout-media {
