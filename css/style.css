@@ -2142,18 +2142,24 @@ p {
   margin-top: 18px;
 }
 
-.build-note h3 {
-  margin: 10px 0 8px;
+.build-note-section + .build-note-section {
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.build-note p {
+.build-note-section .chip {
+  margin: 0 0 14px; 
+}
+
+.build-note-section h3 {
+  margin: 0 0 8px;
+}
+
+.build-note-section p {
   margin: 0;
   color: var(--muted);
   line-height: 1.65;
-}
-
-.build-note p + p {
-  margin-top: 10px;
 }
 
 .build-loadout-media {
